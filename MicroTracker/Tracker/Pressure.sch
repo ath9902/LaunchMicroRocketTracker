@@ -29,39 +29,6 @@ Text HLabel 4600 4100 0    50   Input ~ 0
 Pressure_SDA
 Text HLabel 4600 3900 0    50   Input ~ 0
 Pressure_SCLK
-Wire Wire Line
-	4600 3900 4850 3900
-Wire Wire Line
-	4850 3700 4850 3900
-Connection ~ 4850 3900
-Wire Wire Line
-	4850 3900 5750 3900
-$Comp
-L power:+3.3V #PWR0109
-U 1 1 5EF959B4
-P 4850 3300
-F 0 "#PWR0109" H 4850 3150 50  0001 C CNN
-F 1 "+3.3V" H 4865 3473 50  0000 C CNN
-F 2 "" H 4850 3300 50  0001 C CNN
-F 3 "" H 4850 3300 50  0001 C CNN
-	1    4850 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0110
-U 1 1 5EF96077
-P 5250 3300
-F 0 "#PWR0110" H 5250 3150 50  0001 C CNN
-F 1 "+3.3V" H 5265 3473 50  0000 C CNN
-F 2 "" H 5250 3300 50  0001 C CNN
-F 3 "" H 5250 3300 50  0001 C CNN
-	1    5250 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 3300 4850 3400
-Wire Wire Line
-	5250 3300 5250 3400
 $Comp
 L power:GND #PWR0111
 U 1 1 5EF97138
@@ -84,13 +51,6 @@ F 3 "" H 7250 3500 50  0001 C CNN
 	1    7250 3500
 	1    0    0    -1  
 $EndComp
-Connection ~ 5250 4100
-Wire Wire Line
-	4600 4100 5250 4100
-Wire Wire Line
-	5250 4100 5750 4100
-Wire Wire Line
-	5250 3700 5250 4100
 $Comp
 L Device:C C3
 U 1 1 5EF9903A
@@ -100,28 +60,6 @@ F 1 "100nF" H 7365 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7288 3700 50  0001 C CNN
 F 3 "~" H 7250 3850 50  0001 C CNN
 	1    7250 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5EF99CA8
-P 4850 3550
-F 0 "R3" H 4920 3596 50  0000 L CNN
-F 1 "10k" H 4920 3505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4780 3550 50  0001 C CNN
-F 3 "~" H 4850 3550 50  0001 C CNN
-	1    4850 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5EF9A4E1
-P 5250 3550
-F 0 "R4" H 5320 3596 50  0000 L CNN
-F 1 "10k" H 5320 3505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5180 3550 50  0001 C CNN
-F 3 "~" H 5250 3550 50  0001 C CNN
-	1    5250 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -146,4 +84,11 @@ Wire Notes Line
 	7800 2850 3650 2850
 Text Notes 3650 2850 0    50   ~ 0
 Pressure\n
+Wire Wire Line
+	4600 3900 5750 3900
+Wire Wire Line
+	4600 4100 5750 4100
+NoConn ~ 6950 3900
+NoConn ~ 5750 3700
+NoConn ~ 5750 3800
 $EndSCHEMATC

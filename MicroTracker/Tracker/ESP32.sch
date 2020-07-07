@@ -60,13 +60,13 @@ Wire Wire Line
 	5600 5050 5600 4900
 Text HLabel 6300 3000 2    50   Input ~ 0
 v_bat_measure
-Text HLabel 7350 3150 0    50   Input ~ 0
+Text HLabel 6300 3300 2    50   Input ~ 0
 Transceiver_RX
-Text HLabel 7350 3250 0    50   Input ~ 0
+Text HLabel 6300 3400 2    50   Input ~ 0
 Transceiver_TX
-Text HLabel 7350 3450 0    50   Input ~ 0
+Text HLabel 6300 4300 2    50   Input ~ 0
 GPS_RX
-Text HLabel 7350 3550 0    50   Input ~ 0
+Text HLabel 6300 4400 2    50   Input ~ 0
 GPS_TX
 Wire Wire Line
 	6200 4100 6350 4100
@@ -302,15 +302,11 @@ Flash
 Text GLabel 4800 2300 0    50   Input ~ 0
 En
 Wire Wire Line
-	6200 3800 6300 3800
-Wire Wire Line
 	6200 2300 6300 2300
-Text HLabel 6300 3700 2    50   Input ~ 0
+Text HLabel 8900 3700 2    50   Input ~ 0
 SDA
-Text HLabel 6300 3800 2    50   Input ~ 0
+Text HLabel 8900 3800 2    50   Input ~ 0
 SCK
-Wire Wire Line
-	6200 3700 6300 3700
 NoConn ~ 5000 2500
 NoConn ~ 5000 2600
 Text HLabel 6300 3500 2    50   Input ~ 0
@@ -395,4 +391,80 @@ Wire Notes Line
 	4400 7700 4400 5400
 Wire Notes Line
 	4400 5400 550  5400
+Wire Wire Line
+	6200 3700 7900 3700
+Wire Wire Line
+	6200 3800 8300 3800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F0B76DD
+P 7900 3150
+AR Path="/5EF7F2B3/5F0B76DD" Ref="#PWR?"  Part="1" 
+AR Path="/5EF7F634/5F0B76DD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7900 3000 50  0001 C CNN
+F 1 "+3.3V" H 7915 3323 50  0000 C CNN
+F 2 "" H 7900 3150 50  0001 C CNN
+F 3 "" H 7900 3150 50  0001 C CNN
+	1    7900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F0B76E3
+P 8300 3150
+AR Path="/5EF7F2B3/5F0B76E3" Ref="#PWR?"  Part="1" 
+AR Path="/5EF7F634/5F0B76E3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8300 3000 50  0001 C CNN
+F 1 "+3.3V" H 8315 3323 50  0000 C CNN
+F 2 "" H 8300 3150 50  0001 C CNN
+F 3 "" H 8300 3150 50  0001 C CNN
+	1    8300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3150 7900 3250
+Wire Wire Line
+	8300 3150 8300 3250
+$Comp
+L Device:R R?
+U 1 1 5F0B76EB
+P 7900 3400
+AR Path="/5EF7F2B3/5F0B76EB" Ref="R?"  Part="1" 
+AR Path="/5EF7F634/5F0B76EB" Ref="R?"  Part="1" 
+F 0 "R?" H 7970 3446 50  0000 L CNN
+F 1 "10k" H 7970 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7830 3400 50  0001 C CNN
+F 3 "~" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0B76F1
+P 8300 3400
+AR Path="/5EF7F2B3/5F0B76F1" Ref="R?"  Part="1" 
+AR Path="/5EF7F634/5F0B76F1" Ref="R?"  Part="1" 
+F 0 "R?" H 8370 3446 50  0000 L CNN
+F 1 "10k" H 8370 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8230 3400 50  0001 C CNN
+F 3 "~" H 8300 3400 50  0001 C CNN
+	1    8300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3550 7900 3700
+Connection ~ 7900 3700
+Wire Wire Line
+	7900 3700 8900 3700
+Wire Wire Line
+	8300 3550 8300 3800
+Connection ~ 8300 3800
+Wire Wire Line
+	8300 3800 8900 3800
+Wire Wire Line
+	6200 3400 6300 3400
+Wire Wire Line
+	6200 3300 6300 3300
+Wire Wire Line
+	6200 3000 6300 3000
 $EndSCHEMATC

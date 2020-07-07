@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "RN2483AIRM104"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "RN2483AIRM104")
+        (spec "default")
+    )
+)

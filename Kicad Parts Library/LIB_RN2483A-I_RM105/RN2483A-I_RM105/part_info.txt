@@ -1,0 +1,9 @@
+Manufacturer=Microchip
+PartNumber=RN2483A-I/RM105
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=47
+Version=1.2
+Released=2019-06-11 14:46:45
+Downloaded=2020-06-24 17:02:56
+3D=Y

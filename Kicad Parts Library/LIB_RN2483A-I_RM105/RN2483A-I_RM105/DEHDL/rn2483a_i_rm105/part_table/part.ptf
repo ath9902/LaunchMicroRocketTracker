@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RN2483A_I_RM105'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Microchip", "RN2483A-I/RM105" (!) = "", "RN2483AIRM104", "Other", "RN2483A-I/RM105", "https://www.arrow.com/en/products/rn2483a-irm105/microchip-technology", "579-RN2483A-I/RM105", "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN2483A-I-RM105?qs=PqoDHHvF648jgGKkZVHViQ%3D%3D", "MICROCHIP - RN2483A-I/RM105 - TRANSCEIVER MODULE, 300KBPS, 870MHZ", "http://ww1.microchip.com/downloads/en/DeviceDoc/RN2483-Low-Power-Long-Range-LoRa-Technology-Transceiver-Module-Data-Sheet-DS50002346D.pdf", "3.34 mm"
+END_PART
+
+END.

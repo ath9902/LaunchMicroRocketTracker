@@ -1,0 +1,382 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:RFM95W-868S2 U5
+U 1 1 5EF86A01
+P 3050 2300
+F 0 "U5" H 3050 2981 50  0000 C CNN
+F 1 "RFM95W-868S2" H 3050 2890 50  0000 C CNN
+F 2 "" H -250 3950 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H -250 3950 50  0001 C CNN
+	1    3050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5EF879F8
+P 4450 2000
+F 0 "J2" H 4550 1975 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4550 1884 50  0000 L CNN
+F 2 "" H 4450 2000 50  0001 C CNN
+F 3 " ~" H 4450 2000 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5EF89057
+P 4450 2300
+F 0 "#PWR0113" H 4450 2050 50  0001 C CNN
+F 1 "GND" H 4455 2127 50  0000 C CNN
+F 2 "" H 4450 2300 50  0001 C CNN
+F 3 "" H 4450 2300 50  0001 C CNN
+	1    4450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2000 4250 2000
+Wire Wire Line
+	4450 2200 4450 2300
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 5EF89883
+P 3050 1550
+F 0 "#PWR0114" H 3050 1400 50  0001 C CNN
+F 1 "+3.3V" H 3065 1723 50  0000 C CNN
+F 2 "" H 3050 1550 50  0001 C CNN
+F 3 "" H 3050 1550 50  0001 C CNN
+	1    3050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1800 3050 1550
+$Comp
+L power:GND #PWR0115
+U 1 1 5EF8A1DE
+P 3050 3050
+F 0 "#PWR0115" H 3050 2800 50  0001 C CNN
+F 1 "GND" H 3055 2877 50  0000 C CNN
+F 2 "" H 3050 3050 50  0001 C CNN
+F 3 "" H 3050 3050 50  0001 C CNN
+	1    3050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2900 2950 3050
+Wire Wire Line
+	2950 3050 3050 3050
+Wire Wire Line
+	3150 2900 3150 3050
+Wire Wire Line
+	3150 3050 3050 3050
+Connection ~ 3050 3050
+Wire Wire Line
+	3050 2900 3050 3050
+Text HLabel 2400 2000 0    50   Input ~ 0
+Transceiver_SCLK
+Text HLabel 2400 2200 0    50   Input ~ 0
+Transceiver_MISO
+Text HLabel 2400 2500 0    50   Input ~ 0
+Transceiver_RESET
+Text HLabel 2400 2100 0    50   Input ~ 0
+Transceiver_MOSI
+Wire Wire Line
+	2400 2000 2550 2000
+Wire Wire Line
+	2400 2100 2550 2100
+Wire Wire Line
+	2400 2200 2550 2200
+Wire Wire Line
+	2400 2500 2550 2500
+NoConn ~ 3550 2200
+NoConn ~ 3550 2300
+NoConn ~ 3550 2400
+NoConn ~ 3550 2500
+NoConn ~ 3550 2600
+NoConn ~ 3550 2700
+NoConn ~ 2550 2300
+Wire Notes Line
+	1200 1300 1200 3450
+Wire Notes Line
+	1200 3450 5250 3450
+Wire Notes Line
+	5250 3450 5250 1300
+Wire Notes Line
+	5250 1300 1200 1300
+Text Notes 1200 1300 0    50   ~ 0
+Transceiver
+$Comp
+L MicroTracker:RN2483A-I_RM105 IC1
+U 1 1 5EFB13FA
+P 7400 2350
+F 0 "IC1" H 8200 2615 50  0000 C CNN
+F 1 "RN2483A-I_RM105" H 8200 2524 50  0000 C CNN
+F 2 "MicroTrackerPCBLib:RN2483AIRM104" H 8850 2450 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/RN2483-Low-Power-Long-Range-LoRa-Technology-Transceiver-Module-Data-Sheet-DS50002346D.pdf" H 8850 2350 50  0001 L CNN
+F 4 "MICROCHIP - RN2483A-I/RM105 - TRANSCEIVER MODULE, 300KBPS, 870MHZ" H 8850 2250 50  0001 L CNN "Description"
+F 5 "3.34" H 8850 2150 50  0001 L CNN "Height"
+F 6 "Microchip" H 8850 2050 50  0001 L CNN "Manufacturer_Name"
+F 7 "RN2483A-I/RM105" H 8850 1950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "RN2483A-I/RM105" H 8850 1850 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/rn2483a-irm105/microchip-technology" H 8850 1750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "579-RN2483A-I/RM105" H 8850 1650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN2483A-I-RM105?qs=PqoDHHvF648jgGKkZVHViQ%3D%3D" H 8850 1550 50  0001 L CNN "Mouser Price/Stock"
+	1    7400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF9599C
+P 9150 2450
+F 0 "#PWR?" H 9150 2200 50  0001 C CNN
+F 1 "GND" H 9155 2277 50  0000 C CNN
+F 2 "" H 9150 2450 50  0001 C CNN
+F 3 "" H 9150 2450 50  0001 C CNN
+	1    9150 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 2450 9150 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5EF96B57
+P 9150 2550
+F 0 "#PWR?" H 9150 2300 50  0001 C CNN
+F 1 "GND" H 9155 2377 50  0000 C CNN
+F 2 "" H 9150 2550 50  0001 C CNN
+F 3 "" H 9150 2550 50  0001 C CNN
+	1    9150 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 2550 9150 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5EF96F55
+P 9150 2650
+F 0 "#PWR?" H 9150 2400 50  0001 C CNN
+F 1 "GND" H 9155 2477 50  0000 C CNN
+F 2 "" H 9150 2650 50  0001 C CNN
+F 3 "" H 9150 2650 50  0001 C CNN
+	1    9150 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 2650 9150 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5EF977D6
+P 7250 2350
+F 0 "#PWR?" H 7250 2100 50  0001 C CNN
+F 1 "GND" H 7255 2177 50  0000 C CNN
+F 2 "" H 7250 2350 50  0001 C CNN
+F 3 "" H 7250 2350 50  0001 C CNN
+	1    7250 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 2350 7250 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5EF97F0A
+P 7250 3050
+F 0 "#PWR?" H 7250 2800 50  0001 C CNN
+F 1 "GND" H 7255 2877 50  0000 C CNN
+F 2 "" H 7250 3050 50  0001 C CNN
+F 3 "" H 7250 3050 50  0001 C CNN
+	1    7250 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3050 7250 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5EF98398
+P 7250 4250
+F 0 "#PWR?" H 7250 4000 50  0001 C CNN
+F 1 "GND" H 7255 4077 50  0000 C CNN
+F 2 "" H 7250 4250 50  0001 C CNN
+F 3 "" H 7250 4250 50  0001 C CNN
+	1    7250 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 4250 7250 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5EF98889
+P 7250 4350
+F 0 "#PWR?" H 7250 4100 50  0001 C CNN
+F 1 "GND" H 7255 4177 50  0000 C CNN
+F 2 "" H 7250 4350 50  0001 C CNN
+F 3 "" H 7250 4350 50  0001 C CNN
+	1    7250 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 4350 7250 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5EF98ECA
+P 7250 4450
+F 0 "#PWR?" H 7250 4200 50  0001 C CNN
+F 1 "GND" H 7255 4277 50  0000 C CNN
+F 2 "" H 7250 4450 50  0001 C CNN
+F 3 "" H 7250 4450 50  0001 C CNN
+	1    7250 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 4450 7250 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5EF99598
+P 7250 4650
+F 0 "#PWR?" H 7250 4400 50  0001 C CNN
+F 1 "GND" H 7255 4477 50  0000 C CNN
+F 2 "" H 7250 4650 50  0001 C CNN
+F 3 "" H 7250 4650 50  0001 C CNN
+	1    7250 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 4650 7250 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5EF99F8A
+P 9150 4550
+F 0 "#PWR?" H 9150 4300 50  0001 C CNN
+F 1 "GND" H 9155 4377 50  0000 C CNN
+F 2 "" H 9150 4550 50  0001 C CNN
+F 3 "" H 9150 4550 50  0001 C CNN
+	1    9150 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 4550 9150 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5EF9AB08
+P 9150 3950
+F 0 "#PWR?" H 9150 3700 50  0001 C CNN
+F 1 "GND" H 9155 3777 50  0000 C CNN
+F 2 "" H 9150 3950 50  0001 C CNN
+F 3 "" H 9150 3950 50  0001 C CNN
+	1    9150 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 3950 9150 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5EF9B0E6
+P 9150 3150
+F 0 "#PWR?" H 9150 2900 50  0001 C CNN
+F 1 "GND" H 9155 2977 50  0000 C CNN
+F 2 "" H 9150 3150 50  0001 C CNN
+F 3 "" H 9150 3150 50  0001 C CNN
+	1    9150 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 3150 9150 3150
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5EF9B779
+P 6650 4550
+F 0 "J?" H 6750 4432 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6750 4523 50  0000 L CNN
+F 2 "" H 6650 4550 50  0001 C CNN
+F 3 " ~" H 6650 4550 50  0001 C CNN
+	1    6650 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF9D9EA
+P 6650 4200
+F 0 "#PWR?" H 6650 3950 50  0001 C CNN
+F 1 "GND" H 6655 4027 50  0000 C CNN
+F 2 "" H 6650 4200 50  0001 C CNN
+F 3 "" H 6650 4200 50  0001 C CNN
+	1    6650 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 4200 6650 4350
+Wire Wire Line
+	7400 4550 6850 4550
+Text HLabel 7250 2850 0    50   Input ~ 0
+Transceiver_TX
+Text HLabel 7250 2950 0    50   Input ~ 0
+Transceiver_RX
+Wire Wire Line
+	7250 2950 7400 2950
+Wire Wire Line
+	7250 2850 7400 2850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EFA01D1
+P 7250 3450
+F 0 "#PWR?" H 7250 3300 50  0001 C CNN
+F 1 "+3.3V" V 7265 3578 50  0000 L CNN
+F 2 "" H 7250 3450 50  0001 C CNN
+F 3 "" H 7250 3450 50  0001 C CNN
+	1    7250 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7250 3450 7400 3450
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EFA29CB
+P 9150 3250
+F 0 "#PWR?" H 9150 3100 50  0001 C CNN
+F 1 "+3.3V" V 9165 3378 50  0000 L CNN
+F 2 "" H 9150 3250 50  0001 C CNN
+F 3 "" H 9150 3250 50  0001 C CNN
+	1    9150 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 3250 9000 3250
+NoConn ~ 9000 2750
+NoConn ~ 9000 3350
+NoConn ~ 9000 3450
+NoConn ~ 9000 3550
+NoConn ~ 9000 3650
+NoConn ~ 9000 3750
+NoConn ~ 9000 3850
+NoConn ~ 9000 4050
+NoConn ~ 9000 4150
+NoConn ~ 9000 4350
+NoConn ~ 9000 4450
+NoConn ~ 9000 4250
+NoConn ~ 7400 2450
+NoConn ~ 7400 2650
+NoConn ~ 7400 2750
+NoConn ~ 7400 2550
+NoConn ~ 7400 3150
+NoConn ~ 7400 3250
+NoConn ~ 7400 3350
+NoConn ~ 7400 3550
+NoConn ~ 7400 3650
+NoConn ~ 7400 3750
+NoConn ~ 7400 3850
+NoConn ~ 7400 3950
+NoConn ~ 7400 4050
+NoConn ~ 7400 4150
+$EndSCHEMATC

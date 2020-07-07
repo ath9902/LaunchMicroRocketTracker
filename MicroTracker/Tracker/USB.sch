@@ -1,0 +1,119 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_A J3
+U 1 1 5EF962A4
+P 3550 3000
+F 0 "J3" H 3607 3467 50  0000 C CNN
+F 1 "USB_A" H 3607 3376 50  0000 C CNN
+F 2 "" H 3700 2950 50  0001 C CNN
+F 3 " ~" H 3700 2950 50  0001 C CNN
+	1    3550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5EF97340
+P 3550 3550
+F 0 "#PWR0121" H 3550 3300 50  0001 C CNN
+F 1 "GND" H 3555 3377 50  0000 C CNN
+F 2 "" H 3550 3550 50  0001 C CNN
+F 3 "" H 3550 3550 50  0001 C CNN
+	1    3550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3550 3550 3400
+$Comp
+L Interface_USB:CP2104 U7
+U 1 1 5EF9CD80
+P 5550 3100
+F 0 "U7" H 5550 2011 50  0000 C CNN
+F 1 "CP2104" H 5550 1920 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5700 2150 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2104.pdf" H 5000 4350 50  0001 C CNN
+	1    5550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3000 3850 3000
+Wire Wire Line
+	3850 3100 4850 3100
+Text HLabel 6500 2700 2    50   Input ~ 0
+USB_DTR
+Text HLabel 6400 3100 2    50   Input ~ 0
+USB_RXD0
+Text HLabel 6400 3000 2    50   Input ~ 0
+USB_TXD0
+Wire Wire Line
+	6250 3100 6400 3100
+Wire Wire Line
+	6250 3000 6400 3000
+Wire Wire Line
+	6500 2700 6250 2700
+$Comp
+L Device:C C5
+U 1 1 5EF9FE16
+P 4550 2650
+F 0 "C5" H 4665 2696 50  0000 L CNN
+F 1 "C" H 4665 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4588 2500 50  0001 C CNN
+F 3 "~" H 4550 2650 50  0001 C CNN
+	1    4550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0122
+U 1 1 5EFA0D0A
+P 4350 2500
+F 0 "#PWR0122" H 4350 2350 50  0001 C CNN
+F 1 "+3.3V" H 4365 2673 50  0000 C CNN
+F 2 "" H 4350 2500 50  0001 C CNN
+F 3 "" H 4350 2500 50  0001 C CNN
+	1    4350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2500 4550 2500
+Connection ~ 4550 2500
+Wire Wire Line
+	4550 2500 4700 2500
+$Comp
+L power:GND #PWR0123
+U 1 1 5EFA2B1E
+P 4550 2800
+F 0 "#PWR0123" H 4550 2550 50  0001 C CNN
+F 1 "GND" H 4555 2627 50  0000 C CNN
+F 2 "" H 4550 2800 50  0001 C CNN
+F 3 "" H 4550 2800 50  0001 C CNN
+	1    4550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2150 5350 2150
+Wire Wire Line
+	4700 2150 4700 2500
+Connection ~ 4700 2500
+Wire Wire Line
+	4700 2500 4850 2500
+Wire Wire Line
+	5550 2150 5550 2200
+Wire Wire Line
+	5350 2200 5350 2150
+Connection ~ 5350 2150
+Wire Wire Line
+	5350 2150 4700 2150
+$EndSCHEMATC

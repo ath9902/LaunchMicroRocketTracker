@@ -68,8 +68,6 @@ Text HLabel 6300 4300 2    50   Input ~ 0
 GPS_RX
 Text HLabel 6300 4400 2    50   Input ~ 0
 GPS_TX
-Wire Wire Line
-	6200 4100 6350 4100
 Text GLabel 1500 6350 2    50   Input ~ 0
 En
 $Comp
@@ -467,4 +465,12 @@ Wire Wire Line
 	6200 3300 6300 3300
 Wire Wire Line
 	6200 3000 6300 3000
+Text HLabel 6300 4600 2    50   Input ~ 0
+charge1Trigger
+Text HLabel 6300 4500 2    50   Input ~ 0
+charge2Trigger
+Text HLabel 6300 4100 2    50   Input ~ 0
+charge2Sense
+Text HLabel 6300 4200 2    50   Input ~ 0
+charge1Sense
 $EndSCHEMATC

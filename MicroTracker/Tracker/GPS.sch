@@ -664,4 +664,91 @@ Wire Wire Line
 	5550 3500 5550 3600
 Wire Wire Line
 	4800 3500 4900 3500
+Text Label 7400 2850 0    50   ~ 0
+PPS
+Wire Wire Line
+	7250 2850 7400 2850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F0DD0CB
+P 3000 1050
+F 0 "#PWR?" H 3000 900 50  0001 C CNN
+F 1 "+3.3V" H 3015 1223 50  0000 C CNN
+F 2 "" H 3000 1050 50  0001 C CNN
+F 3 "" H 3000 1050 50  0001 C CNN
+	1    3000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0DDA09
+P 3000 1350
+F 0 "R?" H 3070 1396 50  0000 L CNN
+F 1 "330" H 3070 1305 50  0000 L CNN
+F 2 "" V 2930 1350 50  0001 C CNN
+F 3 "~" H 3000 1350 50  0001 C CNN
+	1    3000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F0DE437
+P 3000 1750
+F 0 "D?" V 3039 1633 50  0000 R CNN
+F 1 "LED" V 2948 1633 50  0000 R CNN
+F 2 "" H 3000 1750 50  0001 C CNN
+F 3 "~" H 3000 1750 50  0001 C CNN
+	1    3000 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F0DF596
+P 3000 2500
+F 0 "#PWR?" H 3000 2250 50  0001 C CNN
+F 1 "GND" H 3005 2327 50  0000 C CNN
+F 2 "" H 3000 2500 50  0001 C CNN
+F 3 "" H 3000 2500 50  0001 C CNN
+	1    3000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1050 3000 1200
+Wire Wire Line
+	3000 1500 3000 1600
+$Comp
+L Transistor_BJT:BC237 Q?
+U 1 1 5F0E52E0
+P 2900 2200
+F 0 "Q?" H 3091 2246 50  0000 L CNN
+F 1 "BC237" H 3091 2155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3100 2125 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC237-D.PDF" H 2900 2200 50  0001 L CNN
+	1    2900 2200
+	1    0    0    -1  
+$EndComp
+Text Label 2450 2200 0    50   ~ 0
+PPS
+Wire Wire Line
+	3000 1900 3000 2000
+Wire Wire Line
+	2500 2200 2700 2200
+Wire Wire Line
+	3000 2400 3000 2500
+Text HLabel 7500 2250 2    50   Input ~ 0
+GPS_RESET
+Text HLabel 7500 2350 2    50   Input ~ 0
+GPS_WAKE_UP
+Text HLabel 7500 2550 2    50   Input ~ 0
+GPS_SCL
+Text HLabel 7500 2650 2    50   Input ~ 0
+GPS_SDA
+Wire Wire Line
+	7250 2250 7500 2250
+Wire Wire Line
+	7250 2350 7500 2350
+Wire Wire Line
+	7250 2550 7500 2550
+Wire Wire Line
+	7250 2650 7500 2650
 $EndSCHEMATC

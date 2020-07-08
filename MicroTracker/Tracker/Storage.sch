@@ -65,10 +65,10 @@ SD_CS
 Text HLabel 4100 3250 0    50   Input ~ 0
 SD_MOSI
 $Comp
-L Device:R R?
+L Device:R R19
 U 1 1 5F055498
 P 4050 3050
-F 0 "R?" V 3843 3050 50  0000 C CNN
+F 0 "R19" V 3843 3050 50  0000 C CNN
 F 1 "R" V 3934 3050 50  0000 C CNN
 F 2 "" V 3980 3050 50  0001 C CNN
 F 3 "~" H 4050 3050 50  0001 C CNN
@@ -86,10 +86,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 3250 4750 3250
 $Comp
-L Device:R R?
+L Device:R R18
 U 1 1 5F05B559
 P 3500 3450
-F 0 "R?" H 3570 3496 50  0000 L CNN
+F 0 "R18" H 3570 3496 50  0000 L CNN
 F 1 "12k" H 3570 3405 50  0000 L CNN
 F 2 "" V 3430 3450 50  0001 C CNN
 F 3 "~" H 3500 3450 50  0001 C CNN
@@ -113,10 +113,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 3650 4450 3650
 $Comp
-L Device:R R?
+L Device:R R20
 U 1 1 5F05CDAB
 P 4350 3450
-F 0 "R?" V 4143 3450 50  0000 C CNN
+F 0 "R20" V 4143 3450 50  0000 C CNN
 F 1 "100" V 4234 3450 50  0000 C CNN
 F 2 "" V 4280 3450 50  0001 C CNN
 F 3 "~" H 4350 3450 50  0001 C CNN
@@ -128,10 +128,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 3450 4550 3450
 $Comp
-L Power_Protection:ESDA6V1BC6 D?
+L Power_Protection:ESDA6V1BC6 D5
 U 1 1 5F05DAB7
 P 4650 4300
-F 0 "D?" H 4980 4346 50  0000 L CNN
+F 0 "D5" H 4980 4346 50  0000 L CNN
 F 1 "ESDA6V1BC6" H 4980 4255 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4650 3950 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/21/07/21/e3/a8/df/42/a2/CD00001906.pdf/files/CD00001906.pdf/jcr:content/translations/en.CD00001906.pdf" V 4650 4300 50  0001 C CNN
@@ -139,10 +139,10 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/21/07/2
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0156
 U 1 1 5F06B02C
 P 4650 4800
-F 0 "#PWR?" H 4650 4550 50  0001 C CNN
+F 0 "#PWR0156" H 4650 4550 50  0001 C CNN
 F 1 "GND" H 4655 4627 50  0000 C CNN
 F 2 "" H 4650 4800 50  0001 C CNN
 F 3 "" H 4650 4800 50  0001 C CNN

@@ -14,25 +14,234 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5F0A9A98
-P 5750 4750
-F 0 "J?" V 5622 4830 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" V 5713 4830 50  0000 L CNN
-F 2 "" H 5750 4750 50  0001 C CNN
-F 3 "~" H 5750 4750 50  0001 C CNN
-	1    5750 4750
-	0    1    1    0   
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5F0CF4AE
+P 5850 3800
+F 0 "J6" V 5722 3880 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 5813 3880 50  0000 L CNN
+F 2 "" H 5850 3800 50  0001 C CNN
+F 3 "~" H 5850 3800 50  0001 C CNN
+	1    5850 3800
+	0    -1   -1   0   
+$EndComp
+Text HLabel 5050 4750 0    50   Input ~ 0
+charge1Trigger
+Text HLabel 5050 3000 0    50   Input ~ 0
+charge2Trigger
+Text HLabel 6600 3200 2    50   Input ~ 0
+charge2Sense
+Text HLabel 6600 4950 2    50   Input ~ 0
+charge1Sense
+$Comp
+L Power_Management:BTS7004-1EPP U?
+U 1 1 5F0FC048
+P 3200 1650
+F 0 "U?" H 3544 1696 50  0000 L CNN
+F 1 "BTS7004-1EPP" H 3544 1605 50  0000 L CNN
+F 2 "Package_SO:Infineon_PG-TSDSO-14-22" H 2300 1400 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BTS7004-1EPP-DS-v01_00-EN.pdf?fileId=5546d4626102d35a016147550a725555" H 3200 1150 50  0001 C CNN
+	1    3200 1650
+	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5F0CF4AE
-P 4200 4750
-F 0 "J?" V 4072 4830 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" V 4163 4830 50  0000 L CNN
-F 2 "" H 4200 4750 50  0001 C CNN
-F 3 "~" H 4200 4750 50  0001 C CNN
-	1    4200 4750
+L Device:R R?
+U 1 1 5F0FCAA9
+P 5250 4900
+F 0 "R?" H 5320 4946 50  0000 L CNN
+F 1 "R" H 5320 4855 50  0000 L CNN
+F 2 "" V 5180 4900 50  0001 C CNN
+F 3 "~" H 5250 4900 50  0001 C CNN
+	1    5250 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4750 5250 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5F0FDA83
+P 5000 5150
+F 0 "#PWR?" H 5000 4900 50  0001 C CNN
+F 1 "GND" V 5005 5022 50  0000 R CNN
+F 2 "" H 5000 5150 50  0001 C CNN
+F 3 "" H 5000 5150 50  0001 C CNN
+	1    5000 5150
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5000 5150 5250 5150
+Wire Wire Line
+	5250 5150 5250 5050
+$Comp
+L Device:R R?
+U 1 1 5F0FE29F
+P 6600 4700
+F 0 "R?" H 6670 4746 50  0000 L CNN
+F 1 "R" H 6670 4655 50  0000 L CNN
+F 2 "" V 6530 4700 50  0001 C CNN
+F 3 "~" H 6600 4700 50  0001 C CNN
+	1    6600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0FEAAE
+P 6600 5200
+F 0 "R?" H 6670 5246 50  0000 L CNN
+F 1 "R" H 6670 5155 50  0000 L CNN
+F 2 "" V 6530 5200 50  0001 C CNN
+F 3 "~" H 6600 5200 50  0001 C CNN
+	1    6600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4850 6600 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5F10057E
+P 6600 5450
+F 0 "#PWR?" H 6600 5200 50  0001 C CNN
+F 1 "GND" H 6605 5277 50  0000 C CNN
+F 2 "" H 6600 5450 50  0001 C CNN
+F 3 "" H 6600 5450 50  0001 C CNN
+	1    6600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5F100B87
+P 5750 4750
+F 0 "Q?" H 5954 4796 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5954 4705 50  0000 L CNN
+F 2 "" H 5950 4850 50  0001 C CNN
+F 3 "~" H 5750 4750 50  0001 C CNN
+	1    5750 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4750 5550 4750
+Connection ~ 5250 4750
+Wire Wire Line
+	6600 4550 6600 4450
+Wire Wire Line
+	6600 4450 5850 4450
+Wire Wire Line
+	5850 4450 5850 4550
+Wire Wire Line
+	5850 4450 5850 4000
+Connection ~ 5850 4450
+Text Label 5950 4250 1    50   ~ 0
+Vpyro
+Wire Wire Line
+	5950 4250 5950 4000
+Wire Wire Line
+	5850 4950 5850 5150
+Wire Wire Line
+	5850 5150 5250 5150
+Connection ~ 5250 5150
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5F116245
+P 5850 2050
+F 0 "J?" V 5722 2130 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 5813 2130 50  0000 L CNN
+F 2 "" H 5850 2050 50  0001 C CNN
+F 3 "~" H 5850 2050 50  0001 C CNN
+	1    5850 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F11624D
+P 5250 3150
+F 0 "R?" H 5320 3196 50  0000 L CNN
+F 1 "R" H 5320 3105 50  0000 L CNN
+F 2 "" V 5180 3150 50  0001 C CNN
+F 3 "~" H 5250 3150 50  0001 C CNN
+	1    5250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3000 5250 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5F116254
+P 5000 3400
+F 0 "#PWR?" H 5000 3150 50  0001 C CNN
+F 1 "GND" V 5005 3272 50  0000 R CNN
+F 2 "" H 5000 3400 50  0001 C CNN
+F 3 "" H 5000 3400 50  0001 C CNN
+	1    5000 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3400 5250 3400
+Wire Wire Line
+	5250 3400 5250 3300
+$Comp
+L Device:R R?
+U 1 1 5F11625C
+P 6600 2950
+F 0 "R?" H 6670 2996 50  0000 L CNN
+F 1 "R" H 6670 2905 50  0000 L CNN
+F 2 "" V 6530 2950 50  0001 C CNN
+F 3 "~" H 6600 2950 50  0001 C CNN
+	1    6600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F116262
+P 6600 3450
+F 0 "R?" H 6670 3496 50  0000 L CNN
+F 1 "R" H 6670 3405 50  0000 L CNN
+F 2 "" V 6530 3450 50  0001 C CNN
+F 3 "~" H 6600 3450 50  0001 C CNN
+	1    6600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3100 6600 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5F116269
+P 6600 3700
+F 0 "#PWR?" H 6600 3450 50  0001 C CNN
+F 1 "GND" H 6605 3527 50  0000 C CNN
+F 2 "" H 6600 3700 50  0001 C CNN
+F 3 "" H 6600 3700 50  0001 C CNN
+	1    6600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5F11626F
+P 5750 3000
+F 0 "Q?" H 5954 3046 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5954 2955 50  0000 L CNN
+F 2 "" H 5950 3100 50  0001 C CNN
+F 3 "~" H 5750 3000 50  0001 C CNN
+	1    5750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3000 5550 3000
+Connection ~ 5250 3000
+Wire Wire Line
+	6600 2800 6600 2700
+Wire Wire Line
+	6600 2700 5850 2700
+Wire Wire Line
+	5850 2700 5850 2800
+Wire Wire Line
+	5850 2700 5850 2250
+Connection ~ 5850 2700
+Text Label 5950 2500 1    50   ~ 0
+Vpyro
+Wire Wire Line
+	5950 2500 5950 2250
+Wire Wire Line
+	5850 3200 5850 3400
+Wire Wire Line
+	5850 3400 5250 3400
+Connection ~ 5250 3400
 $EndSCHEMATC

@@ -142,8 +142,6 @@ F5 "SD_MOSI" I L 9800 6000 50
 $EndSheet
 Text GLabel 7700 5800 0    50   Input ~ 0
 USB_RXD0
-Text GLabel 7700 5700 0    50   Input ~ 0
-USB_DTR
 Text GLabel 7700 5900 0    50   Input ~ 0
 USB_TXD0
 Text GLabel 5050 5050 2    50   Input ~ 0
@@ -252,11 +250,11 @@ Wire Wire Line
 	9650 6000 9800 6000
 Text GLabel 5100 2750 2    50   Input ~ 0
 SD_CLK
-Text GLabel 5100 2850 2    50   Input ~ 0
+Text GLabel 5100 3050 2    50   Input ~ 0
 SD_MISO
 Text GLabel 5100 2950 2    50   Input ~ 0
 SD_CS
-Text GLabel 5100 3050 2    50   Input ~ 0
+Text GLabel 5100 2850 2    50   Input ~ 0
 SD_MOSI
 Wire Wire Line
 	4950 2750 5100 2750
@@ -270,4 +268,101 @@ Wire Wire Line
 	10450 1550 10550 1550
 Wire Wire Line
 	10450 1650 10550 1650
+NoConn ~ 7700 5700
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F16E7C3
+P 800 7300
+F 0 "H1" H 900 7349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 900 7258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 800 7300 50  0001 C CNN
+F 3 "~" H 800 7300 50  0001 C CNN
+	1    800  7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0171
+U 1 1 5F16ECAC
+P 800 7500
+F 0 "#PWR0171" H 800 7250 50  0001 C CNN
+F 1 "GND" H 805 7327 50  0000 C CNN
+F 2 "" H 800 7500 50  0001 C CNN
+F 3 "" H 800 7500 50  0001 C CNN
+	1    800  7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  7500 800  7400
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F17171F
+P 1700 7300
+F 0 "H2" H 1800 7349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1800 7258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 1700 7300 50  0001 C CNN
+F 3 "~" H 1700 7300 50  0001 C CNN
+	1    1700 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0172
+U 1 1 5F171725
+P 1700 7500
+F 0 "#PWR0172" H 1700 7250 50  0001 C CNN
+F 1 "GND" H 1705 7327 50  0000 C CNN
+F 2 "" H 1700 7500 50  0001 C CNN
+F 3 "" H 1700 7500 50  0001 C CNN
+	1    1700 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 7500 1700 7400
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F17331D
+P 2600 7300
+F 0 "H3" H 2700 7349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2700 7258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 2600 7300 50  0001 C CNN
+F 3 "~" H 2600 7300 50  0001 C CNN
+	1    2600 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0173
+U 1 1 5F173323
+P 2600 7500
+F 0 "#PWR0173" H 2600 7250 50  0001 C CNN
+F 1 "GND" H 2605 7327 50  0000 C CNN
+F 2 "" H 2600 7500 50  0001 C CNN
+F 3 "" H 2600 7500 50  0001 C CNN
+	1    2600 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7500 2600 7400
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F17332A
+P 3500 7300
+F 0 "H4" H 3600 7349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3600 7258 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 3500 7300 50  0001 C CNN
+F 3 "~" H 3500 7300 50  0001 C CNN
+	1    3500 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0174
+U 1 1 5F173330
+P 3500 7500
+F 0 "#PWR0174" H 3500 7250 50  0001 C CNN
+F 1 "GND" H 3505 7327 50  0000 C CNN
+F 2 "" H 3500 7500 50  0001 C CNN
+F 3 "" H 3500 7500 50  0001 C CNN
+	1    3500 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 7500 3500 7400
 $EndSCHEMATC

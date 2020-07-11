@@ -288,4 +288,9 @@ Wire Notes Line
 	8600 1950 2750 1950
 Wire Notes Line
 	2750 1950 2750 5350
+NoConn ~ 7400 3350
+NoConn ~ 7400 3450
+NoConn ~ 6000 3850
+NoConn ~ 6000 3750
+NoConn ~ 6000 3650
 $EndSCHEMATC

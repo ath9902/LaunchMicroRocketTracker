@@ -477,4 +477,16 @@ Wire Wire Line
 	4850 3700 5000 3700
 Wire Wire Line
 	4850 3800 5000 3800
+Wire Wire Line
+	6200 4100 6300 4100
+Wire Wire Line
+	6200 4200 6300 4200
+Wire Wire Line
+	6200 4500 6300 4500
+Wire Wire Line
+	6200 4600 6300 4600
+Text HLabel 6300 4300 2    50   Input ~ 0
+armed
+Text HLabel 6300 4400 2    50   Input ~ 0
+safe
 $EndSCHEMATC

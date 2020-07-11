@@ -45,12 +45,8 @@ S 7850 4500 950  800
 U 5EF7F30A
 F0 "Transceiver" 50
 F1 "Transceiver.sch" 50
-F2 "Transceiver_SCLK" I L 7850 4600 50 
-F3 "Transceiver_MISO" I L 7850 4700 50 
-F4 "Transceiver_RESET" I L 7850 4800 50 
-F5 "Transceiver_MOSI" I L 7850 4900 50 
-F6 "Transceiver_TX" I L 7850 5200 50 
-F7 "Transceiver_RX" I L 7850 5100 50 
+F2 "Transceiver_TX" I L 7850 5200 50 
+F3 "Transceiver_RX" I L 7850 5100 50 
 $EndSheet
 $Sheet
 S 850  850  4100 4600
@@ -74,6 +70,8 @@ F15 "charge1Trigger" I R 4950 4250 50
 F16 "charge2Trigger" I R 4950 4350 50 
 F17 "charge2Sense" I R 4950 4550 50 
 F18 "charge1Sense" I R 4950 4650 50 
+F19 "armed" I R 4950 2500 50 
+F20 "safe" I R 4950 2400 50 
 $EndSheet
 $Sheet
 S 7850 5550 1000 700 
@@ -88,22 +86,6 @@ Text GLabel 9600 4800 0    50   Input ~ 0
 Pressure_SDA
 Text GLabel 9600 4900 0    50   Input ~ 0
 Pressure_SCLK
-Text GLabel 7600 4600 0    50   Input ~ 0
-Transciever_SCLK
-Text GLabel 7600 4700 0    50   Input ~ 0
-Transciever_MISO
-Text GLabel 7600 4800 0    50   Input ~ 0
-Transciever_RESET
-Text GLabel 7600 4900 0    50   Input ~ 0
-Transciever_MOSI
-Wire Wire Line
-	7600 4600 7850 4600
-Wire Wire Line
-	7600 4700 7850 4700
-Wire Wire Line
-	7600 4800 7850 4800
-Wire Wire Line
-	7600 4900 7850 4900
 Text GLabel 9550 3800 0    50   Input ~ 0
 GPS_TX
 Text GLabel 9550 3900 0    50   Input ~ 0
@@ -146,12 +128,8 @@ Text GLabel 7700 5900 0    50   Input ~ 0
 USB_TXD0
 Text GLabel 5050 5050 2    50   Input ~ 0
 USB_RXD0
-Text GLabel 5050 5150 2    50   Input ~ 0
-USB_DTR
 Text GLabel 5050 4950 2    50   Input ~ 0
 USB_TXD0
-Wire Wire Line
-	7700 5700 7850 5700
 Wire Wire Line
 	7700 5800 7850 5800
 Wire Wire Line
@@ -173,19 +151,19 @@ Transceiver_RX
 Text GLabel 5100 1650 2    50   Input ~ 0
 Transceiver_TX
 $Sheet
-S 7700 950  1050 1000
+S 7850 1750 1050 1000
 U 5EFA735D
 F0 "Charges" 50
 F1 "Charges.sch" 50
-F2 "charge1Trigger" I L 7700 1150 50 
-F3 "charge2Trigger" I L 7700 1250 50 
-F4 "charge2Sense" I L 7700 1550 50 
-F5 "charge1Sense" I L 7700 1450 50 
+F2 "charge1Trigger" I L 7850 1950 50 
+F3 "charge2Trigger" I L 7850 2050 50 
+F4 "charge2Sense" I L 7850 2350 50 
+F5 "charge1Sense" I L 7850 2250 50 
+F6 "armed" I L 7850 2500 50 
+F7 "safe" I L 7850 2600 50 
 $EndSheet
 Wire Wire Line
 	4950 1400 5100 1400
-Wire Wire Line
-	4950 1650 5100 1650
 Wire Wire Line
 	4950 1750 5100 1750
 Wire Wire Line
@@ -193,18 +171,18 @@ Wire Wire Line
 Wire Wire Line
 	4950 2100 5100 2100
 $Sheet
-S 9300 1400 1150 750 
+S 9450 2200 1150 750 
 U 5F07F54B
 F0 "9_DOF" 50
 F1 "9_DOF.sch" 50
-F2 "9DofSDA" I R 10450 1550 50 
-F3 "9DofSCL" I R 10450 1650 50 
-F4 "9DofSDOM" I R 10450 1800 50 
-F5 "9DofAG" I R 10450 1900 50 
+F2 "9DofSDA" I R 10600 2350 50 
+F3 "9DofSCL" I R 10600 2450 50 
+F4 "9DofSDOM" I R 10600 2600 50 
+F5 "9DofAG" I R 10600 2700 50 
 $EndSheet
-Text GLabel 10550 1550 2    50   Input ~ 0
+Text GLabel 10700 2350 2    50   Input ~ 0
 9DofSDA
-Text GLabel 10550 1650 2    50   Input ~ 0
+Text GLabel 10700 2450 2    50   Input ~ 0
 9DofSCL
 Text GLabel 5100 3400 2    50   Input ~ 0
 9DofSDA
@@ -265,10 +243,9 @@ Wire Wire Line
 Wire Wire Line
 	4950 3050 5100 3050
 Wire Wire Line
-	10450 1550 10550 1550
+	10600 2350 10700 2350
 Wire Wire Line
-	10450 1650 10550 1650
-NoConn ~ 7700 5700
+	10600 2450 10700 2450
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5F16E7C3
@@ -365,4 +342,61 @@ F 3 "" H 3500 7500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3500 7500 3500 7400
+Text GLabel 5100 4250 2    50   Input ~ 0
+charge1Trigger
+Text GLabel 5100 4350 2    50   Input ~ 0
+charge2Trigger
+Text GLabel 5100 4550 2    50   Input ~ 0
+charge2Sense
+Text GLabel 5100 4650 2    50   Input ~ 0
+charge1Sense
+Wire Wire Line
+	4950 4250 5100 4250
+Wire Wire Line
+	4950 4350 5100 4350
+Wire Wire Line
+	4950 4550 5100 4550
+Wire Wire Line
+	4950 4650 5100 4650
+Text GLabel 7700 1950 0    50   Input ~ 0
+charge1Trigger
+Text GLabel 7700 2050 0    50   Input ~ 0
+charge2Trigger
+Text GLabel 7700 2350 0    50   Input ~ 0
+charge2Sense
+Text GLabel 7700 2250 0    50   Input ~ 0
+charge1Sense
+Wire Wire Line
+	7700 1950 7850 1950
+Wire Wire Line
+	7700 2050 7850 2050
+Wire Wire Line
+	7700 2250 7850 2250
+Wire Wire Line
+	7700 2350 7850 2350
+NoConn ~ 9850 3700
+NoConn ~ 9850 4000
+NoConn ~ 9850 4100
+NoConn ~ 9850 4200
+NoConn ~ 7850 5700
+Wire Wire Line
+	4950 1650 5100 1650
+Text GLabel 7700 2500 0    50   Input ~ 0
+armed
+Text GLabel 7700 2600 0    50   Input ~ 0
+safe
+Wire Wire Line
+	7700 2500 7850 2500
+Wire Wire Line
+	7700 2600 7850 2600
+Text GLabel 5100 2500 2    50   Input ~ 0
+armed
+Text GLabel 5100 2400 2    50   Input ~ 0
+safe
+Wire Wire Line
+	4950 2400 5100 2400
+Wire Wire Line
+	4950 2500 5100 2500
+NoConn ~ 10600 2600
+NoConn ~ 10600 2700
 $EndSCHEMATC

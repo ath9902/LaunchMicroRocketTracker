@@ -489,4 +489,15 @@ Text HLabel 6300 4300 2    50   Input ~ 0
 armed
 Text HLabel 6300 4400 2    50   Input ~ 0
 safe
+NoConn ~ 5000 3500
+NoConn ~ 5000 3600
+NoConn ~ 5000 3900
+NoConn ~ 5000 4000
+NoConn ~ 6200 2500
+NoConn ~ 6200 2700
+NoConn ~ 6200 2900
+NoConn ~ 6200 3100
+NoConn ~ 6200 4000
+NoConn ~ 6200 4300
+NoConn ~ 6200 4400
 $EndSCHEMATC
